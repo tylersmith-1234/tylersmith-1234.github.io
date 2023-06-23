@@ -31,18 +31,6 @@
   position: relative;
   display: inline-block;
 }
-.dropdown .dropbtn {
-  font-size: 17px;
-  float: left;
-  text-align: center;
-  border: none;
-  outline: none;
-  color: #696969;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
