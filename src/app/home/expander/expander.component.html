@@ -1,7 +1,15 @@
-<div>
-  <h4>
-    <a [href]="link" target="_blank"><img [src]="icon" width="100px" height="100px" style="display: inline-block;"></a>
-    {{header}}
-  </h4>
-  <ng-content></ng-content>
+<div class="padding">
+  <div class="wrapper">
+    <div class="header">
+      <img [src]="'../../../assets/img/expand-' + (expanded ? 'up' : 'down') + '.png'"
+          (click)="expanded = !expanded" class="expander-icon">
+      <a [href]="link" target="_blank">
+        <img [src]="icon" class="comp-icon">
+      </a>
+      <p class="header-text" (click)="expanded = !expanded">{{header}}</p>
+    </div>
+    <div *ngIf="expanded" class="body">
+      <ng-content></ng-content>
+    </div>
+  </div>
 </div>

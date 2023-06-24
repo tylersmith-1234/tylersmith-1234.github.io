@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy to Github Pages
+After successfully merging the current branch or pushing directly to main, run the following from the top-level directory (tylersmith-1234.github.io) to deploy the angular project and update the live website:
+`ng deploy --base-href=https://github.com/tylersmith-1234/tylersmith-1234.github.io.git`

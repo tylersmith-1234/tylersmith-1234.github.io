@@ -9,4 +9,5 @@ export class ExpanderComponent {
   @Input() icon: string;
   @Input() link: string;
   @Input() header: string;
+  public expanded: boolean = false;
 }
