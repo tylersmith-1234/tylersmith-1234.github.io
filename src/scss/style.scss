@@ -18,6 +18,7 @@ body {
 	font-family: $font-secondary;
   line-height: 1.8;
   color: $brand-body-text-color;
+	margin: 0;
 }
 // selection
 ::selection {
@@ -31,7 +32,7 @@ body {
 // Typography
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.2;
   font-family: $font-primary;
   color: $brand-black;
@@ -91,22 +92,6 @@ a {
 	}
 }
 
-.probootstrap-logo {
-	float: left;
-	color: $brand-white;
-	padding-left: 60px;
-	font-size: 20px;
-	display: block;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-family: $font-primary;
-	&:hover, &:focus, &:active {
-		color: $brand-white;
-	}
-	@media screen and (max-width: $screen-sm) {
-		padding-left: 0px;
-	}
-}
 .probootstrap-nav {
 	margin-left: 60px;
 	text-align: left;
@@ -300,22 +285,6 @@ a {
 	&.probootstrap-intro-inner {
 		height: 500px;	
 	}
-	.probootstrap-scroll-down {
-		position: absolute;
-		z-index: 1;
-		left: 50%;
-		transform: translateX(-50%);
-		transition: .9s all ease-out;
-		bottom: 20px;
-		color: $brand-white;
-		opacity: 1;
-		visibility: visible;
-		&.probootstrap-sleep {
-			bottom: -50px;
-			opacity: 0;
-			visibility: hidden;
-		}
-	}
 	.probootstrap-intro-text {
 		margin-top: 300px;
 
@@ -416,97 +385,6 @@ a {
 			font-size: 30px;
 		}
 	}
-}
-.probootstrap-watch-intro {
-	font-size: 23px;
-	font-weight: 300;
-	a {
-		i {
-			position: relative;
-			top: 2px;
-			transition: .3s all;
-		}
-		&:hover {
-			i {
-				margin-left: 20px;
-			}
-		}
-	}
-}
-
-// burger
-.probootstrap-burger-menu {
-  display: inline-block;
-  width:18px;
-  height:18px;
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-  i {
-    position: relative;
-    display: inline-block;
-    width: 18px;
-    height: 2px;
-    color: $brand-white;
-    font:bold 14px/.4 Helvetica, arial;
-    text-transform: uppercase;
-    text-indent:-55px;
-    background: $brand-white;
-    transition:all .2s ease-out;
-    &::before, &::after {
-      content:'';
-      width: 18px;
-      height: 2px;
-      background: $brand-white;
-      position: absolute;
-      left:0;
-      transition: all .2s ease-out;
-    }
-    &::before {
-      top: -7px;
-    }
-    &::after {
-      bottom: -7px;
-    }
-  }
-  &:hover {
-    i {
-      &::before {
-        top: -10px;
-      }
-      &::after {
-        bottom: -10px;
-      }
-    }
-  }
-  &.active {
-
-    i {
-      // background: #fff;
-      background: transparent;
-      &::before {
-        top:0;
-        -webkit-transform: rotateZ(45deg);
-           -moz-transform: rotateZ(45deg);
-            -ms-transform: rotateZ(45deg);
-             -o-transform: rotateZ(45deg);
-                transform: rotateZ(45deg);
-      }
-      &::after {
-        bottom:0;
-        -webkit-transform: rotateZ(-45deg);
-           -moz-transform: rotateZ(-45deg);
-            -ms-transform: rotateZ(-45deg);
-             -o-transform: rotateZ(-45deg);
-                transform: rotateZ(-45deg);
-      }
-    }
-  }
-}
-.probootstrap-burger-menu {
-  position: absolute;
-  top: 30px;
-  right: 20px;
 }
 
 // btn
@@ -1748,7 +1626,7 @@ a {
 	}
 }
 .owl-carousel .owl-controls,
-.owl-carousel-posts .owl-controls, {
+.owl-carousel-posts .owl-controls {
 	margin-top: 0;
 }
 .owl-carousel .owl-controls .owl-nav .owl-next,

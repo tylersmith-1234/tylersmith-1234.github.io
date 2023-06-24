@@ -1,0 +1,10 @@
+.video {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  video::-webkit-media-controls-fullscreen-button
+  {
+    display: none !important;
+  }
+}

@@ -1,4 +1,5 @@
 // Import font(s) from google.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 // Mixins
 @font-face {
@@ -35,9 +36,9 @@
 }
 
 // Variables
-$font-primary: 'Rubik', sans-serif;
-$font-secondary: 'Inconsolata', monospace;
-$brand-primary: #96c7f5;
+$font-primary: 'Montserrat';
+$font-secondary: 'Courier New', monospace;
+$brand-primary: lightblue;
 $brand-secondary: #ddf0f3;
 $brand-black: #000000;
 $brand-white: #ffffff;

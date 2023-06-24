@@ -1,0 +1,51 @@
+.topnav {
+  --header-height: 50px;
+  font-size: large;
+  width: 100%;
+  background-color: lightblue;
+  display: inline-flex;
+  height: var(--header-height);
+  .link {
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    &:hover {background-color: #ddd;}
+  }
+  .dropbtn {
+    position: relative;
+    display: flex;
+    font-size: large;
+    background-color: inherit;
+    padding: 0 10px 0 10px;
+    align-items: center;  
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: #ddd;
+      color: black;
+      transition: background-color 0.5s;
+      .dropdown-content {
+        pointer-events: all;
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;      
+      }
+    }
+    .dropdown-content {
+      pointer-events: none;
+      opacity: 0;
+      display: block;
+      position: absolute;
+      top: var(--header-height);
+      left: 0px;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      padding-right: 0px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  }
+}
