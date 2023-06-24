@@ -1,6 +1,3 @@
-html {
-  scroll-behavior: smooth !important;
-}
 .sticky {
   position: fixed;
   top: 0;

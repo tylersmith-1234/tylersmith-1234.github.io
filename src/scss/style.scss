@@ -285,22 +285,6 @@ a {
 	&.probootstrap-intro-inner {
 		height: 500px;	
 	}
-	.probootstrap-scroll-down {
-		position: absolute;
-		z-index: 1;
-		left: 50%;
-		transform: translateX(-50%);
-		transition: .9s all ease-out;
-		bottom: 20px;
-		color: $brand-white;
-		opacity: 1;
-		visibility: visible;
-		&.probootstrap-sleep {
-			bottom: -50px;
-			opacity: 0;
-			visibility: hidden;
-		}
-	}
 	.probootstrap-intro-text {
 		margin-top: 300px;
 
