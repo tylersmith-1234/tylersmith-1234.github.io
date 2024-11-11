@@ -48,3 +48,6 @@ package.json
 package-lock.json
 .DS_Store
 img/spotify-queue-vid.mov
+
+#secrets
+src/environments/environment.ts

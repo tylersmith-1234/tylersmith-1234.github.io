@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ToxicClassificationComponent } from './toxic-classification/toxic-classification.component';
 import { SpotifyQueueComponent } from './spotify-queue/spotify-queue.component';
+import { CookbookComponent } from './cookbook/cookbook.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'toxic-classification', component: ToxicClassificationComponent},
-  {path: 'spotify-queue', component: SpotifyQueueComponent}
+  {path: 'spotify-queue', component: SpotifyQueueComponent},
+  {path: 'cookbook', component: CookbookComponent}
 ];
 
 @NgModule({

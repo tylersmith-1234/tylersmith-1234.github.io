@@ -1,5 +1,5 @@
 if (!('boxShadow' in document.body.style)) {
-    document.body.setAttribute('class', 'noBoxShadow');
+    document.body?.setAttribute('class', 'noBoxShadow');
 }
 
 document.body.addEventListener("click", function(e) {

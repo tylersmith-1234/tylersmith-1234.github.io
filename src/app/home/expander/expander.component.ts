@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-expander',
   templateUrl: './expander.component.html',
-  styleUrls: ['./expander.component.css']
+  styleUrls: ['./expander.component.scss']
 })
 export class ExpanderComponent {
   @Input() icon: string;

@@ -1,0 +1,64 @@
+.tooltip {
+    position: fixed;
+    background-color: black;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: Arial;
+    padding: 3px 6px;
+    font-size: 13px;
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+    transform:translateX(-50%);
+    &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+    &.below {
+        transform:translate(-50%, 5px);
+        &::before {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid black;
+            left: calc(50% - 5px);
+            top: -5px;
+        }
+    }
+
+    &.above {
+        transform:translate(-50%, calc(-100% - 5px));
+        &::before {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid black;
+            left: calc(50% - 5px);
+            bottom: -5px;
+        }
+    }
+
+    &.left {
+        transform:translate(calc(-100% - 7px), -50%);
+        &::before {
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid black;
+            top: calc(50% - 5px);
+            right: -5px;
+        }
+    }
+
+    &.right {
+        transform:translate(5px, -50%);
+        &::before {
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid black;
+            top: calc(50% - 5px);
+            left: -5px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="tooltip" [style.left]="left + 'px'" [style.top]="top + 'px'" [ngClass]="position">
+  <ng-container [ngTemplateOutlet]="isTooltipArray ? multiTooltip : singleTooltip">
+  </ng-container>
+</div>
+<ng-template #singleTooltip>
+  <div *ngIf="!isTooltipArray"
+    [ngClass]="position">
+    {{tooltip}}
+  </div>
+</ng-template>
+<ng-template #multiTooltip>
+  <ul>
+    <li *ngFor="let entry of tooltip">
+      {{entry}}
+    </li>
+  </ul>
+</ng-template>

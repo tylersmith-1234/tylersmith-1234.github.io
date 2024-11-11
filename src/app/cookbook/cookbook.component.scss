@@ -1,0 +1,65 @@
+:host ::ng-deep {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+}
+.body {
+    padding-top: 100px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    .form {
+        display: inline-flex;
+        flex-direction: column;
+        border: solid 3px lightblue;
+        border-radius: 5px;
+        padding: 20px;
+        min-width: 500px;
+        width: calc(100% - 80px);
+        .field {
+            .label-with-warning {
+                display: inline-flex;
+                position: relative;
+                left: -25px;
+                .warning-icon {
+                    margin-right: 5px;
+                    transition: all 1s ease;
+                    opacity: 0;
+                    position: relative;
+                    left: -25px;
+                    &.show {
+                        opacity: 1;
+                        left: 0;
+                        transition: all 1s ease;
+                    }
+                }
+            }
+            display: inline-flex;
+            flex-direction: column;
+            padding: 5px;
+            select {
+                width: 150px;
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button {
+                opacity: 1;
+            }
+            .ingredient {
+                // padding: 5px;
+            }
+        }
+        .pic-date {
+            display: inline-flex;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+    // #main-iframe {
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     border: 2px solid black;
+    // }
+}
